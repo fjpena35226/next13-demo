@@ -28,7 +28,7 @@ function CartDetail() {
                 )}
                 <div className="flex w-full flex-col">
                   <p> {cartLine.product?.title || ""} </p>
-                  <div className="w-full flex flex-row justify-between items-end">
+                  <div className="w-full flex flex-col md:flex-row justify-between items-end flex-wrap">
                     <div className="w-full md:w-8/12">
                       <h3 className="font-semibold mt-3">
                         ${cartLine.product?.price || ""}{" "}

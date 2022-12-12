@@ -15,7 +15,7 @@ function ProfileDetails() {
   ) => {
     evt.preventDefault();
     if (logout) logout();
-    router.push("/login");
+    router.push('/login')
   };
 
   return user ? (

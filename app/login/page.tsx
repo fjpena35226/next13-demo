@@ -9,7 +9,7 @@ function Login() {
 
   return (
     <div className="flex justify-center flex-col items-center">
-      <div className="max-w-[70vw]">
+      <div className="w-full md:w-auto md:max-w-[70vw]">
         <LoginDetail />
       </div>
     </div>

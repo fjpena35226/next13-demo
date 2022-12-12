@@ -29,7 +29,7 @@ function LoginDetail() {
   return (
     <div className="min-w-[320px] min-h-[250px] rounded-md shadow-md p-8 flex flex-col">
       <p className="text-5xl font-bold mb-16 text-center">Login</p>
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 mb-4  ">
         <InputField placeholder="Username" />
         <InputField type="password" placeholder="Password" />
       </div>

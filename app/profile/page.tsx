@@ -7,6 +7,7 @@ function Profile() {
   const userId = isAuth();
   if (!userId) redirect("/login");
 
+
   return (
     <div className="flex justify-center flex-col items-center">
       <div className="max-w-[70vw]">

@@ -9,13 +9,10 @@ function Header() {
     <nav className="bg-blue-500 h-[70px] px-4 lg:px-[10vw] py-4 flex flex-row sticky top-0 z-50">
       <div className="flex grow text-white uppercase items-center">
         <Link href={"/"} className="text-white">
-          NextJs 13 Demo
+          NextJs 13 Shop
         </Link>
       </div>
       <div className="flex flex-row gap-x-6 items-center">
-        <Link href={"/"} className="text-white">
-          Home
-        </Link>
         <Link href={"/products"} className="text-white">
           Products
         </Link>

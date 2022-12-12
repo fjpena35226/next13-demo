@@ -15,9 +15,9 @@ async function ProductList({ category }: ProductListProps) {
     : await getProducts();
 
   return (
-    <div className="flex flex-row flex-wrap justify-around gap-8">
+    <div className="flex flex-row flex-wrap justify-center gap-8 w-full">
       {products?.map((prod) => (
-        <div key={prod.id} className="w-full lg:w-2/12 rounded-md shadow-md">
+        <div key={prod.id} className="w-9/12 md:w-2/12 rounded-md shadow-md">
           <ProductCard product={prod} />
         </div>
       ))}

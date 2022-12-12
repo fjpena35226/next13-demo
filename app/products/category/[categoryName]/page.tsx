@@ -18,8 +18,8 @@ function ProductsByCategoryPage({
 
   return (
     <>
-      <div className="w-full">
-        <p className="text-5xl font-bold mb-16 text-left capitalize">
+      <div className="w-full mt-6 md:mt-0">
+        <p className="text-5xl font-bold mb-16 text-center md:text-left capitalize">
           {categoryName ? decodeURIComponent(categoryName) : "Products"}
         </p>
       </div>

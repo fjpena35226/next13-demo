@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import { HiOutlineUserCircle } from "react-icons/hi";
 import { useUser } from "src/context/user.context";
 import { generateColor } from "src/utils/format";
