@@ -1,4 +1,3 @@
-import axios from "axios";
 import { Resource } from "../types/resource.type";
 
 const BASE_URL = process.env.NEXT_PUBLIC_API_URL;
