@@ -30,8 +30,8 @@ function LoginDetail() {
     <div className="min-w-[320px] min-h-[250px] rounded-md shadow-md p-8 flex flex-col">
       <p className="text-5xl font-bold mb-16 text-center">Login</p>
       <div className="flex flex-col gap-4 mb-4  ">
-        <InputField placeholder="Username" />
-        <InputField type="password" placeholder="Password" />
+        <InputField placeholder="Username" defaultValue="john@gmail.com"/>
+        <InputField type="password" placeholder="Password" defaultValue="1234678"/>
       </div>
       <Button color="bg-green-500" onClick={handleLogin} isLoading={isLoading}>
         Login

@@ -2,11 +2,11 @@ import React from "react";
 import { redirect } from "next/navigation";
 import { isAuth } from "src/helpers/auth";
 import ProfileDetails from "../../src/components/ProfileDetails/ProfileDetails.client";
+import { getUser } from "src/helpers/api/services/user.service";
 
-function Profile() {
+async function Profile() {
   const userId = isAuth();
   if (!userId) redirect("/login");
-
 
   return (
     <div className="flex justify-center flex-col items-center">

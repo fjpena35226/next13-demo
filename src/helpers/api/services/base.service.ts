@@ -8,7 +8,8 @@ export const createService = <T extends Resource>(resource: T) => {
     try {
       const opts = { ...options, method: "GET" };
       const res = await fetch(`${BASE_URL}/${resource.path}`, opts);
-      return await res.json();
+      const text = await res.text()
+      return text ? JSON.parse(text) : undefined;
     } catch (error) {
       throw error;
     }
