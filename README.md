@@ -1,12 +1,14 @@
-This is a [Next.js](https://nextjs.org/)v13 project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## [LIVE DEMO](https://chic-marigold-0c193e.netlify.app)
+
+This is a [Next.js13](https://beta.nextjs.org/docs/getting-started) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
 First setup the env vars:
 
-.env
+**.env**
 
-NEXT_PUBLIC_API_URL = "https://fakestoreapi.com"
+**NEXT_PUBLIC_API_URL** = "https://fakestoreapi.com"
 
 Then, run the development server:
 
