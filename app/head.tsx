@@ -3,7 +3,7 @@ import React from "react";
 function Head() {
   return (
     <>
-      <title>NextJs 13 Store Demo</title>
+      <title>NextJs 13 Shop Demo</title>
       <meta content="width=device-width, initial-scale=1" name="viewport" />
     </>
   );
