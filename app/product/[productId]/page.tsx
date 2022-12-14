@@ -16,7 +16,7 @@ async function ProductDetailPage({
 }: ProductDetailProps) {
   const product: Product = await getProduct(productId);
 
-  if (!product.id) {
+  if (!product?.id) {
     notFound();
   }
 
