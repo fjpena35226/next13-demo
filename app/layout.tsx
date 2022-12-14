@@ -28,7 +28,7 @@ async function RootLayout({ children }: RootLayoutProps) {
             <CartProvider cart={cart}>
               <Header />
               <main className="pt-8 px-4 lg:px-[10vw]">
-                <div>{children}</div>
+                {children}
               </main>
             </CartProvider>
           </UserProvider>

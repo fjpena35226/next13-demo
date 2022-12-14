@@ -1,6 +1,5 @@
 import Loading from "app/loading";
 import React, { Suspense } from "react";
-import CategoryList from "../../src/components/CategoryList/CategoryList";
 import ProductList from "../../src/components/Products/ProductList/ProductList";
 
 function ProductsPage() {

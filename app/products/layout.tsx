@@ -6,7 +6,7 @@ type RootLayoutProps = {
   children: React.ReactNode;
 };
 
-async function RootLayout({ children }: RootLayoutProps) {
+async function ProductsRootLayout({ children }: RootLayoutProps) {
   return (
     <div className="flex justify-center flex-col items-center w-full">
       <div className="flex flex-col md:flex-row w-full">
@@ -22,4 +22,4 @@ async function RootLayout({ children }: RootLayoutProps) {
   );
 }
 
-export default RootLayout;
+export default ProductsRootLayout;
