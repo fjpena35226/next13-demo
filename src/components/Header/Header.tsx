@@ -19,11 +19,11 @@ function Header() {
         <Link href={"/products"} className="text-white">
           Products
         </Link>
-        <Link href={"/cart"} className="text-white">
+        <Link href={"/cart"} className="text-white mr-4">
           <CartIcon />
         </Link>
-        <Link href={user?.id ? "/profile" : "/login"} className="text-white">
-          <UserAvatar />
+        <Link href={user?.id ? "/profile" : "/login"} className="text-white flex flex-row items-center">
+          <span className="mr-3">{user?.id ? `Hi ${user.name?.firstname}` : 'Log in'}</span> <UserAvatar />
         </Link>
       </div>
     </nav>
