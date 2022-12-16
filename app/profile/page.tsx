@@ -2,9 +2,8 @@ import React from "react";
 import { redirect } from "next/navigation";
 import { isAuth } from "src/helpers/auth";
 import ProfileDetails from "../../src/components/ProfileDetails/ProfileDetails.client";
-import { getUser } from "src/helpers/api/services/user.service";
 
-async function Profile() {
+function Profile() {
   const userId = isAuth();
   if (!userId) redirect("/login");
 
