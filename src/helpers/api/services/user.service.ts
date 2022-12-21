@@ -10,6 +10,8 @@ const { getResource } = createService<Resource>(UserResource);
 
 export const getUser = async (userId: string, options?: {}) => {
   try {
+    if(!userId) return undefined
+    
     const data: User = await getResource(
       userId,
       options || {

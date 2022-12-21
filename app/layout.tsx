@@ -16,8 +16,7 @@ type RootLayoutProps = {
 
 async function RootLayout({ children }: RootLayoutProps) {
   const userId = isAuth();
-  const user = userId ? await getUser(userId) : undefined;
-  const cart = await getCart();
+  const [user, cart] = await Promise.all([getUser(userId), getCart()]);
 
   return (
     <html>
@@ -27,9 +26,7 @@ async function RootLayout({ children }: RootLayoutProps) {
           <UserProvider user={user}>
             <CartProvider cart={cart}>
               <Header />
-              <main className="pt-8 px-4 lg:px-[10vw]">
-                {children}
-              </main>
+              <main className="pt-8 px-4 lg:px-[10vw]">{children}</main>
             </CartProvider>
           </UserProvider>
         </Suspense>
